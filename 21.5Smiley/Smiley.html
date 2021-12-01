@@ -16,7 +16,7 @@
       subButton.type = "submit";
       document.body.append(textInput, subButton);
       let smileyContainer = document.createElement("div");
-      document.appendChild(smileyContainer);
+      document.body.appendChild(smileyContainer);
 
       subButton.addEventListener("click", () => {
         let regexFilter = /^\d+$/gi;
@@ -26,7 +26,7 @@
           smileyContainer.innerHTML = "";
           for (let i = 0; i < number; i++) {
             smileyContainer.innerHTML +=
-              "<img src 'Mr._Smiley_Face.png' width='40px'/>";
+              "<img src='Mr._Smiley_Face.png' width='40px'/>";
           }
         } else {
           alert("Please insert a number!");
